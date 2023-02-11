@@ -1,1 +1,42 @@
-This project is related to a registration form using html and css
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Apple iPhone purchase</h1>
+  </head>
+  <body>
+    <p id="description">Fill details below to complete the purchase</p>
+    <form id="survey-form">
+      <fieldset>
+       <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="Enter your Name" required class="form-input"></label>
+       <br>
+       <label for="email" id="email-label">Email<input type="email" name="email" id="email" placeholder="Enter your Email" required class="form-input"></label>
+       <br>
+       <label for="number" id="number-label">Age<input id="number" name="number" type="number" placeholder="Age" min=18 max=100 class="form-input" required></label>
+       <br>
+       <label>Choose your model
+         <select id="dropdown" class="form-input">
+           <option value="">Select an option</option>
+           <option value=1>iPhone 12</option>
+           <option value=2>iPhone 12 Pro</option>
+           <option value=3>iPhone 12 Pro Max</option>
+           <option value=4>iPhone 13</option>
+           <option value=5>iPhone 13 Pro</option>
+           <option value=6>iPhone 13 Pro Max</option>
+          </select><br>
+        <label>Choose your finish<br>
+          <input type="radio" name="finish" value="green">Green</label><br>
+          <label><input type="radio" name="finish" value="pink">Pink</label><br>
+          <label><input type="radio" name="finish" value="blue">Blue</label><br>
+          <label><input type="radio" name="finish" value="midnight">Midnight</label><br>
+          <label><input type="radio" name="finish" value="starlight">Starlight</label><br>
+          <label><input type="radio" name="finish" value="red">Red</label><br>
+        <label>Choose your capacity<br><input type="checkbox" name="capacity" value="128GB">128GB</label><br>
+        <label><input type="checkbox" name="capacity" value="256GB">256GB</label><br>
+        <input type="checkbox" name="capacity" value="512GB">512GB</label><br>
+        <label>Delivery details<br><textarea name="textarea" rows="7" cols="50" placeholder="Enter delivery details..."></textarea><br><br>
+        <input id="submit" type="submit" value="Place order" class="submit-button">
+  </fieldset>
+  </form>
+  </body>
+</html>
